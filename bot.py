@@ -4,12 +4,10 @@ import os
 import asyncio
 from datetime import datetime
 
-from dotenv import load_dotenv
 from aiogram import Bot, Dispatcher, F
 from aiogram.filters import Command
 from aiogram.types import Message, ReplyKeyboardMarkup, KeyboardButton
 
-load_dotenv()
 TOKEN = os.getenv("BOT_TOKEN")
 
 bot = Bot(token=TOKEN)
